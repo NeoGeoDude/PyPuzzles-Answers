@@ -1,0 +1,10 @@
+input_string = input("Input string: ")
+
+def replace_spaces_with_hyphens(string):
+    return string.replace(" ", "-")
+  
+output_string = replace_spaces_with_hyphens(input_string)
+print(output_string)
+
+
+

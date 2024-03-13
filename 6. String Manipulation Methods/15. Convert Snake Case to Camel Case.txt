@@ -1,0 +1,9 @@
+def snake_to_camel(snake_case_str):
+    words = snake_case_str.split('_')
+    camel_case_str = ''.join(word.capitalize() for word in words)
+    return camel_case_str
+
+snake_case_input = input("Enter a snake_case string: ")
+
+camel_case_output = snake_to_camel(snake_case_input)
+print(camel_case_output)

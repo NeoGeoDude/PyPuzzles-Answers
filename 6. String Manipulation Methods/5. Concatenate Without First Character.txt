@@ -1,0 +1,7 @@
+def concatenate_strings(string1, string2):
+    return string1[1:] + string2[1:]
+  
+string1 = input("Input 1st string: ")
+string2 = input("Input 2nd string: ")
+result = concatenate_strings(string1, string2)
+print(result)

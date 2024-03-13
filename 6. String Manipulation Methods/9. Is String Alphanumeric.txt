@@ -1,0 +1,5 @@
+def is_alphanumeric(string):
+    return string.isalnum()
+
+input_string = input("Enter a string: ")
+print(is_alphanumeric(input_string))

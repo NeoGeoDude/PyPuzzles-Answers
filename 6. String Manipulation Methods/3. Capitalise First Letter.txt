@@ -1,0 +1,6 @@
+def capitalize_words(string):
+    return ' '.join(word.capitalize() for word in string.split())
+
+input_string = input("Input string: ")
+output_string = capitalize_words(input_string)
+print(output_string)

@@ -1,0 +1,5 @@
+def is_digit(string):
+    return string.isdigit()
+
+input_string = input("Enter a string: ")
+print(is_digit(input_string))
