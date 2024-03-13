@@ -1,0 +1,13 @@
+def get_valid_age():
+    while True:
+        try:
+            age = int(input("Enter your age (between 0 and 120): "))
+            if 0 <= age <= 120:
+                return age
+            else:
+                print("Invalid age. Age must be between 0 and 120.")
+        except ValueError:
+            print("Invalid input. Please enter a valid integer for age.")
+
+valid_age = get_valid_age()
+print("Valid age entered:", valid_age)

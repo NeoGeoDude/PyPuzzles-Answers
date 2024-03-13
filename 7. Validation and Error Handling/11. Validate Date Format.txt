@@ -1,0 +1,20 @@
+def is_valid_date_format(date):
+    parts = date.split('/')
+    if len(parts) == 3:
+        day, month, year = parts
+        if day.isdigit() and month.isdigit() and year.isdigit():
+            day, month, year = int(day), int(month), int(year)
+            if 1 <= month <= 12 and 1 <= day <= 31:
+                return True
+    return False
+
+def get_valid_date():
+    while True:
+        user_input = input("Enter a date (DD/MM/YYYY): ")
+        if is_valid_date_format(user_input):
+            return user_input
+        else:
+            print("Invalid date format. Please enter in DD/MM/YYYY format.")
+
+valid_date = get_valid_date()
+print("Valid date entered:", valid_date)

@@ -1,0 +1,11 @@
+def get_valid_integer():
+    while True:
+        try:
+            user_input = input("Enter an integer: ")
+            valid_integer = int(user_input)
+            return valid_integer
+        except ValueError:
+            print("Invalid input. Please enter an integer.")
+
+valid_integer = get_valid_integer()
+print("Valid integer entered:", valid_integer)

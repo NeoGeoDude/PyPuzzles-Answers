@@ -1,0 +1,15 @@
+def is_valid_phone_number(phone_number):
+    return phone_number.isdigit() and len(phone_number) == 10
+
+def main():
+    while True:
+        user_input = input("Enter a phone number (10 digits): ")
+
+        if is_valid_phone_number(user_input):
+            print(f"Valid phone number entered: {user_input}")
+            break
+        else:
+            print("Invalid phone number. It must contain 10 digits.")
+
+if __name__ == "__main__":
+    main()

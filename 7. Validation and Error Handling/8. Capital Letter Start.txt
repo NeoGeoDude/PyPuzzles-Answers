@@ -1,0 +1,13 @@
+def starts_with_capital(sentence):
+    return sentence[0].isupper()
+
+def get_sentence_with_capital():
+    while True:
+        user_input = input("Enter a sentence: ")
+        if starts_with_capital(user_input):
+            return user_input
+        else:
+            print("The sentence must start with a capital letter.")
+
+capital_sentence = get_sentence_with_capital()
+print("Valid sentence entered:", capital_sentence)

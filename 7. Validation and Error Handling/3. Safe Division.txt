@@ -1,0 +1,18 @@
+def perform_division():
+    while True:
+        try:
+            numerator = float(input("Enter the numerator: "))
+            denominator = float(input("Enter the denominator: "))
+
+            if denominator == 0:
+                print("Cannot divide by zero. Try again.")
+                continue
+
+            result = numerator / denominator
+            print(f"Result: {result}")
+            break
+
+        except ValueError:
+            print("Invalid input. Please enter valid numbers.")
+           
+perform_division()

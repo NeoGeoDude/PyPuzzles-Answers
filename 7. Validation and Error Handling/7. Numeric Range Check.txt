@@ -1,0 +1,16 @@
+def get_valid_number(min_range, max_range):
+    while True:
+        try:
+            user_input = int(input(f"Enter a number ({min_range}-{max_range}): "))
+            if min_range <= user_input <= max_range:
+                return user_input
+            else:
+                print("Invalid number. It must be within the range 1-100.")
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
+
+min_range = 1
+max_range = 100
+
+valid_number = get_valid_number(min_range, max_range)
+print("Valid number entered:", valid_number)

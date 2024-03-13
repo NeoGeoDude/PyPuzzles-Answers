@@ -1,0 +1,11 @@
+def get_valid_username():
+    while True:
+        username = input("Enter a username (5 to 10 characters, no spaces): ")
+
+        if 5 <= len(username) <= 10 and ' ' not in username:
+            return username
+        else:
+            print("Invalid username. It must be 5-10 characters long and contain no spaces.")
+
+valid_username = get_valid_username()
+print("Valid username entered:", valid_username)

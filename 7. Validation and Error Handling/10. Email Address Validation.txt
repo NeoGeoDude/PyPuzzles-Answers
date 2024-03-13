@@ -1,0 +1,13 @@
+def is_valid_email(email):
+    return email.count('@') == 1 and email.count('.') >= 1 and email.index('@') < email.rindex('.')
+
+def get_valid_email():
+    while True:
+        user_input = input("Enter an email address: ")
+        if is_valid_email(user_input):
+            return user_input
+        else:
+            print("Invalid email address. Please enter a valid email.")
+
+valid_email = get_valid_email()
+print("Valid email address entered:", valid_email)

@@ -1,0 +1,13 @@
+def get_valid_string(min_length, max_length):
+    while True:
+        user_input = input(f"Enter a string ({min_length}-{max_length} characters): ")
+        if min_length <= len(user_input) <= max_length:
+            return user_input
+        else:
+            print("Invalid string length. It must be 5-15 characters long.")
+
+min_length = 5
+max_length = 15
+
+valid_string = get_valid_string(min_length, max_length)
+print("Valid string entered:", valid_string)
