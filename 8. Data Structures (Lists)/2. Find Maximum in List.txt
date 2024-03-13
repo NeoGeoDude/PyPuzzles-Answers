@@ -1,0 +1,18 @@
+def find_maximum_number(input_string):
+    number_list = [int(num) for num in input_string.split()]
+
+    if not number_list:
+        return None
+      
+    max_number = max(number_list)
+
+    return max_number
+
+input_numbers = input("Enter a string of numbers separated by spaces: ")
+
+max_number = find_maximum_number(input_numbers)
+
+if max_number is not None:
+    print(f"Maximum number: {max_number}")
+else:
+    print("No numbers entered.")

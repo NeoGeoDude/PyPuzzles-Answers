@@ -1,0 +1,15 @@
+def calculate_row_sums(numbers_str):
+    rows = numbers_str.split("/")
+    two_d_list = [list(map(int, row.split())) for row in rows]
+    row_sums = [sum(row) for row in two_d_list]
+    return row_sums
+
+def main():
+    numbers_str = input("Enter a string of numbers separated by '/': ")
+
+    row_sums = calculate_row_sums(numbers_str)
+    
+    print("Row sums:", ' '.join(map(str, row_sums)) + '.')
+
+if __name__ == "__main__":
+    main()

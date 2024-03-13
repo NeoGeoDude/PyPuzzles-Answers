@@ -1,0 +1,14 @@
+def find_even_numbers(numbers_str):
+    numbers_list = list(map(int, numbers_str.split()))
+    even_numbers = [num for num in numbers_list if num % 2 == 0]
+    return even_numbers
+
+def main():
+    numbers_str = input("Enter a string of numbers separated by spaces: ")
+
+    even_numbers = find_even_numbers(numbers_str)
+    
+    print("Even numbers:", ' '.join(map(str, even_numbers)) + '.')
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,7 @@
+def reverse_and_print_list(input_string):
+    item_list = input_string.split()
+    reversed_list = reversed(item_list)
+    print("Reversed list:", ' '.join(reversed_list) + '.')
+
+input_items = input("Enter a string of items separated by spaces: ")
+reverse_and_print_list(input_items)

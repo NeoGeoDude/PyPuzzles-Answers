@@ -1,0 +1,13 @@
+def count_target_word(words_str, target_word):
+    words_list = words_str.split()
+    return words_list.count(target_word)
+
+def main():
+    words_str = input("Enter a string of words separated by spaces: ")
+    target_word = input("Enter the target word: ")
+
+    occurrences = count_target_word(words_str, target_word)
+    print(f"{target_word} occurs {occurrences} times")
+
+if __name__ == "__main__":
+    main()

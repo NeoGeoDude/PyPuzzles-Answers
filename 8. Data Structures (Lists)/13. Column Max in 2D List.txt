@@ -1,0 +1,28 @@
+def convert_string_to_2d_list(input_string):
+    rows = input_string.split("/")
+    result = []
+    for row in rows:
+        result.append([int(num) for num in row.split()])
+    return result
+
+def find_column_max(matrix):
+    num_columns = len(matrix[0])
+    column_max_list = [max(row[i] for row in matrix) for i in range(num_columns)]
+    return column_max_list
+
+def print_column_max(column_max_list):
+    print("Column max:", end=" ")
+    print(" ".join(map(str, column_max_list)))
+
+input_string = input("Enter a string of numbers using \"/\" to separate rows: ")
+
+matrix = convert_string_to_2d_list(input_string)
+
+column_max_list = find_column_max(matrix)
+
+def print_column_max(column_max_list):
+    print("Column max:", end=" ")
+    print(" ".join(map(str, column_max_list)) + ".")
+
+
+print_column_max(column_max_list)

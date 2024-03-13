@@ -1,0 +1,6 @@
+def print_list_length(input_string):
+    items_list = input_string.split()
+    print(f"List length: {len(items_list)}")
+
+input_items = input("Enter a string of items separated by spaces: ")
+print_list_length(input_items)

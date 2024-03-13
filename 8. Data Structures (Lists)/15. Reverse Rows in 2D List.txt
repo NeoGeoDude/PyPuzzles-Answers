@@ -1,0 +1,12 @@
+def convert_string_to_2d_list(input_string):
+    rows = input_string.split("/")
+    result = [row.split() for row in rows]
+    return result
+
+def reverse_and_print_rows(matrix):
+    reversed_rows = [" ".join(row[::-1]) for row in matrix]
+    print("Reversed rows:", " ".join(reversed_rows) + ".")
+
+input_string = input("Enter a string of items using \"/\" to separate rows: ")
+matrix = convert_string_to_2d_list(input_string)
+reverse_and_print_rows(matrix)

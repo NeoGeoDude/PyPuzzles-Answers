@@ -1,0 +1,17 @@
+def get_fifth_element(input_string):
+    item_list = input_string.split()
+
+    if len(item_list) >= 5:
+        fifth_element = item_list[4]
+        return fifth_element
+    else:
+        return None
+
+input_items = input("Enter a string of items separated by spaces: ")
+
+fifth_element = get_fifth_element(input_items)
+
+if fifth_element is not None:
+    print(f"Fifth element: {fifth_element}")
+else:
+    print("List does not have a fifth element.")

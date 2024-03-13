@@ -1,0 +1,20 @@
+def convert_string_to_2d_list(input_string):
+    rows = input_string.split("/")
+    result = []
+    for row in rows:
+        result.append([int(num) for num in row.split()])
+    return result
+
+def calculate_diagonal_sum(matrix):
+    num_rows, num_columns = len(matrix), len(matrix[0])
+    diagonal_sum = sum(matrix[i][i] for i in range(min(num_rows, num_columns)))
+    return diagonal_sum
+
+input_string = input("Enter a string of numbers using \"/\" to separate rows: ")
+
+matrix = convert_string_to_2d_list(input_string)
+
+diagonal_sum = calculate_diagonal_sum(matrix)
+
+print("Diagonal sum:", diagonal_sum, end=".\n")
+

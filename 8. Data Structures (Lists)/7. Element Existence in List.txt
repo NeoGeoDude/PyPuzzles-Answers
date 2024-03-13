@@ -1,0 +1,15 @@
+def check_target_item(items_str, target_item):
+    items_list = items_str.split()
+    return target_item in items_list
+
+def main():
+    items_str = input("Enter a string of items separated by spaces: ")
+    target_item = input("Enter the target item: ")
+
+    if check_target_item(items_str, target_item):
+        print(f"Item {target_item} found in list")
+    else:
+        print(f"Item {target_item} not found in list")
+
+if __name__ == "__main__":
+    main()

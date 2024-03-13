@@ -1,0 +1,8 @@
+def calculate_sum_of_elements(input_string):
+    integer_list = [int(num) for num in input_string.split()]
+    total_sum = sum(integer_list)
+    return total_sum
+
+input_numbers = input("Enter a string of integers separated by spaces: ")
+sum_of_elements = calculate_sum_of_elements(input_numbers)
+print("Sum of elements:", sum_of_elements)

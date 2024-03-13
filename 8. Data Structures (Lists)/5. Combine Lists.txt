@@ -1,0 +1,9 @@
+def combine_lists_and_print(list1, list2):
+    items_list1 = list1.split()[1:]
+    items_list2 = list2.split()[1:]
+    combined_list = items_list1 + items_list2
+    print("Combined list:", ' '.join(combined_list) + '.')
+
+input_list1 = input("Enter the first string of items separated by spaces: ")
+input_list2 = input("Enter the second string of items separated by spaces: ")
+combine_lists_and_print(input_list1, input_list2)

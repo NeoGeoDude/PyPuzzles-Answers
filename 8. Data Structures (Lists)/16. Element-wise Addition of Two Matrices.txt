@@ -1,0 +1,30 @@
+def convert_string_to_2d_list(input_string):
+    rows = input_string.split("/")
+    result = [list(map(int, row.split())) for row in rows]
+    return result
+
+def element_wise_sum(matrix1, matrix2):
+    result_matrix = [
+        [matrix1[i][j] + matrix2[i][j] for j in range(len(matrix1[i]))]
+        for i in range(len(matrix1))
+    ]
+    return result_matrix
+
+def print_matrix_sum(result_matrix):
+    for i, row in enumerate(result_matrix):
+        print(" ".join(map(str, row)), end="")
+        if i < len(result_matrix) - 1:
+            print("/", end="")
+    print(".")
+
+
+input_string1 = input("Enter the first string of numbers using \"/\" to separate rows: ")
+input_string2 = input("Enter the second string of numbers using \"/\" to separate rows: ")
+
+matrix1 = convert_string_to_2d_list(input_string1)
+matrix2 = convert_string_to_2d_list(input_string2)
+
+result_matrix = element_wise_sum(matrix1, matrix2)
+
+print("Matrix sum:", end=" ")
+print_matrix_sum(result_matrix)

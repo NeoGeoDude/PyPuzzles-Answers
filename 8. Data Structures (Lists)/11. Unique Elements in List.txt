@@ -1,0 +1,14 @@
+def remove_duplicates(numbers_str):
+    numbers_list = list(map(int, numbers_str.split()))
+    unique_numbers = list(set(numbers_list))
+    return unique_numbers
+
+def main():
+    numbers_str = input("Enter a string of numbers separated by spaces: ")
+
+    unique_numbers = remove_duplicates(numbers_str)
+    
+    print("Unique elements:", ' '.join(map(str, unique_numbers)) + '.')
+
+if __name__ == "__main__":
+    main()
