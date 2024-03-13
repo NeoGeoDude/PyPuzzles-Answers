@@ -1,0 +1,14 @@
+def sum_until_negative_one():
+    total_sum = 0
+    while True:
+        try:
+            num = int(input("Enter an integer (or -1 to stop): "))
+            if num == -1:
+                break
+            total_sum += num
+        except ValueError:
+            print("Please enter a valid integer.")
+    
+    print(f"{total_sum}")
+
+sum_until_negative_one()

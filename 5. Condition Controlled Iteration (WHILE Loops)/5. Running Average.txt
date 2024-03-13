@@ -1,0 +1,16 @@
+def running_average():
+    total_sum = 0
+    count = 0
+
+    while True:
+        try:
+            num = int(input("Enter a number (or 999 to stop): "))
+            if num == 999:
+                break
+            total_sum += num
+            count += 1
+            current_average = total_sum / count
+            print(f"{current_average}")
+        except ValueError:
+            print("Please enter a valid number.")
+running_average()

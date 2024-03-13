@@ -1,0 +1,24 @@
+def sum_double_first():
+    first_number = None
+    total_sum = 0
+
+    while True:
+        try:
+            num = int(input("Enter a number: "))
+            
+            if first_number is None:
+                first_number = num
+                total_sum += num
+            
+            else:
+                total_sum += num
+            
+            if total_sum >= 2 * first_number:
+                break
+
+        except ValueError:
+            print("Please enter a valid number.")
+
+    print(f"{total_sum}")
+
+sum_double_first()

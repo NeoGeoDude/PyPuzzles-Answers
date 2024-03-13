@@ -1,0 +1,15 @@
+def sum_positive_numbers():
+    total_sum = 0
+
+    while True:
+        try:
+            num = int(input("Enter a number (or a negative number to stop): "))
+            if num < 0:
+                break
+            total_sum += num
+        except ValueError:
+            print("Please enter a valid number.")
+
+    print(f"{total_sum}")
+
+sum_positive_numbers()

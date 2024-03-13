@@ -1,0 +1,13 @@
+odd_count = 0
+
+while True:
+    try:
+        num = int(input("Enter a number (or 0 to finish): "))
+        if num == 0:
+            break
+        if num % 2 != 0:
+            odd_count += 1
+    except ValueError:
+        print("Please enter a valid integer.")
+
+print(f"{odd_count}")

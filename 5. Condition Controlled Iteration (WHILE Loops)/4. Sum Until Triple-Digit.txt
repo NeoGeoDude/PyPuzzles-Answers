@@ -1,0 +1,13 @@
+def sum_until_100():
+    total_sum = 0
+
+    while total_sum < 100:
+        try:
+            num = int(input("Enter a number: "))
+            total_sum += num
+        except ValueError:
+            print("Please enter a valid number.")
+
+    print(f"{total_sum}")
+
+sum_until_100()

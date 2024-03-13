@@ -1,0 +1,18 @@
+def is_palindrome(number):
+    return str(number) == str(number)[::-1]
+
+def main():
+    while True:
+        user_input = input("Enter a number: ")
+
+        if user_input.isdigit():
+            entered_number = int(user_input)
+            
+            if is_palindrome(entered_number):
+                print(f"{entered_number}")
+                break
+        else:
+            print("Invalid input. Please enter a valid number.")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,15 @@
+last_non_negative = None
+
+while True:
+    try:
+        num = int(input("Enter a number: "))
+        if num < 0:
+            break
+        last_non_negative = num
+    except ValueError:
+        print("Please enter a valid number.")
+
+if last_non_negative is not None:
+    print(f"{last_non_negative}")
+else:
+	print("")

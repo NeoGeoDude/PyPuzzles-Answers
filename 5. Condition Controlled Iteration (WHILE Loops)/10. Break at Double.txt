@@ -1,0 +1,19 @@
+def main():
+    previous_number = float(input("Enter the first number: "))
+    current_number = 0
+    total_sum = previous_number
+
+    while True:
+        current_number = float(input("Enter the next number: "))
+        
+        if current_number == 2 * previous_number:
+            total_sum += current_number
+            break
+
+        total_sum += current_number
+        previous_number = current_number
+
+    print(f"{int(total_sum)}")
+
+if __name__ == "__main__":
+    main()

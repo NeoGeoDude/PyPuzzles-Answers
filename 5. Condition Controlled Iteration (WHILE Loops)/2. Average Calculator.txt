@@ -1,0 +1,21 @@
+def calculate_average():
+    total_sum = 0
+    count = 0
+
+    while True:
+        try:
+            num = float(input("Enter a number (or 0 to calculate average): "))
+            if num == 0:
+                break
+            total_sum += num
+            count += 1
+        except ValueError:
+            print("Please enter a valid number.")
+
+    if count == 0:
+        print("No valid numbers entered.")
+    else:
+        average = total_sum / count
+        print(f"{average}")
+
+calculate_average()
