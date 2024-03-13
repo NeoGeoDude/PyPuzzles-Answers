@@ -1,0 +1,13 @@
+input_price = float(input("Enter the price: "))
+
+def calculate_discounted_price(price):
+    if price > 1000:
+        discount = 0.1
+    else:
+        discount = 0.05
+
+    discounted_price = price - (price * discount)
+    return "{:.2f}".format(discounted_price)
+
+discounted_price = calculate_discounted_price(input_price)
+print(discounted_price)

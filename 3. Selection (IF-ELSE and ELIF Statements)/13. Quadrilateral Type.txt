@@ -1,0 +1,11 @@
+a = input("Enter 1st length: ")
+b = input("Enter 2nd length: ")
+c = input("Enter 3rd length: ")
+d = input("Enter 4th length: ")
+
+if a == b == c == d:
+  print("Square")
+elif (a == c and b == d) or (a == b and c == d):
+  print("Rectangle")
+else:
+  print("Other")
