@@ -1,0 +1,21 @@
+def fibonacci_sequence(N):
+    if N < 1:
+        print("Please enter a positive integer greater than or equal to 1.")
+        return
+    elif N == 1:
+        print("0")
+    elif N == 2:
+        print("0 1")
+    else:
+        fib_sequence = [0, 1]
+        for _ in range(2, N):
+            next_number = fib_sequence[-1] + fib_sequence[-2]
+            fib_sequence.append(next_number)
+
+        print(" ".join(map(str, fib_sequence)))
+
+try:
+    num = int(input("Enter a positive integer: "))
+    fibonacci_sequence(num)
+except ValueError:
+    print("Please enter a valid positive integer.")

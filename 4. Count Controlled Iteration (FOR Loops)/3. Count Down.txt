@@ -1,0 +1,6 @@
+def countdown(starting_number):
+    for i in range(starting_number, 0, -1):
+        print(i)
+
+starting_number = int(input("Enter the starting number for the countdown: "))
+countdown(starting_number)

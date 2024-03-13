@@ -1,0 +1,7 @@
+def print_even_numbers(up_to_number):
+    for i in range(1, up_to_number + 1):
+        if i % 2 == 0:
+            print(i)
+            
+given_number = int(input("Enter number"))
+print_even_numbers(given_number)

@@ -1,0 +1,9 @@
+given_number = int(input("Enter number: "))
+
+def multiplication_table(number):
+    table = [number * i for i in range(1, 11)]
+    return table
+
+result_table = multiplication_table(given_number)
+for i in range(1, 11):
+    print(f"{result_table[i-1]}")

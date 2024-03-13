@@ -1,0 +1,13 @@
+def print_nth_powers(N):
+    if N < 1:
+        print("Please enter a positive integer greater than or equal to 1.")
+        return
+    
+    for i in range(1, N + 1):
+        result = i ** N
+        print(f"{result}")
+try:
+    num = int(input("Enter a positive integer: "))
+    print_nth_powers(num)
+except ValueError:
+    print("Please enter a valid positive integer.")

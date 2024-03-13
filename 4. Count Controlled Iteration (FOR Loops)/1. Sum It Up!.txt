@@ -1,0 +1,7 @@
+def calculate_sum(up_to_number):
+    total_sum = sum(range(1, up_to_number + 1))
+    return total_sum
+
+input_number = int(input("Enter a number to calculate the sum up to and including that number: "))
+result = calculate_sum(input_number)
+print(result)

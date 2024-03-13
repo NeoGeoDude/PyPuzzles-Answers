@@ -1,0 +1,16 @@
+def sum_of_evens(n):
+    if n < 0:
+        return "Please enter a non-negative integer."
+    
+    even_sum = 0
+    for i in range(2, n + 1, 2):
+        even_sum += i
+
+    return even_sum
+
+try:
+    num = int(input("Enter a positive integer: "))
+    result = sum_of_evens(num)
+    print(f"{result}")
+except ValueError:
+    print("Please enter a valid positive integer.")
