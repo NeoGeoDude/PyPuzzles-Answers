@@ -1,0 +1,3 @@
+hours = int(input("how many hours"))
+converted = hours * 3600
+print(converted)

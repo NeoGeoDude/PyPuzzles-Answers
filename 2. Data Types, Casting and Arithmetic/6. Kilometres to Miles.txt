@@ -1,0 +1,3 @@
+kilometres = float(input("Enter the distance in kilometres: "))
+miles = kilometres * 0.621
+print(miles)

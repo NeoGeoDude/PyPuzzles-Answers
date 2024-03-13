@@ -1,0 +1,3 @@
+age_in_years = int(input("Enter your age in years: "))
+age_in_seconds = age_in_years * 365 * 24 * 60 * 60
+print(age_in_seconds)

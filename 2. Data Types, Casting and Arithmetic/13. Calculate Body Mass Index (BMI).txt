@@ -1,0 +1,9 @@
+height = float(input("!"))
+weight = float(input("!"))
+
+def calculate_bmi(height, weight):
+    bmi = weight / (height ** 2)
+    return round(bmi, 2)
+
+bmi = calculate_bmi(height, weight)
+print(bmi)

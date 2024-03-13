@@ -1,0 +1,7 @@
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return round(fahrenheit, 1)
+
+temperature_celsius = float(input("Enter temperature in Celsius: "))
+temperature_fahrenheit = celsius_to_fahrenheit(temperature_celsius)
+print(temperature_fahrenheit)

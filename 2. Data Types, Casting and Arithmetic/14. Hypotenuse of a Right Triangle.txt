@@ -1,0 +1,11 @@
+import math
+
+def calculate_hypotenuse(a, b):
+    hypotenuse = math.sqrt(a**2 + b**2)
+    return hypotenuse
+
+side_a = float(input("Enter the length of side A: "))
+side_b = float(input("Enter the length of side B: "))
+
+hypotenuse = calculate_hypotenuse(side_a, side_b)
+print(f"{hypotenuse:.1f}")

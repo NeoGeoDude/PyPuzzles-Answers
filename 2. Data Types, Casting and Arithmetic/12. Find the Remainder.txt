@@ -1,0 +1,8 @@
+dividend = int(input("!"))
+divisor = int(input("!"))
+def find_remainder(dividend, divisor):
+    remainder = dividend % divisor
+    return remainder
+
+result = find_remainder(dividend, divisor)
+print(result)

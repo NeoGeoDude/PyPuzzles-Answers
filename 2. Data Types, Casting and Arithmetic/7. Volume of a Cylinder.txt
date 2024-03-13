@@ -1,0 +1,7 @@
+radius = float(input("a"))
+height = float(input("j"))
+pi = 3.14
+
+volume = pi*radius*radius*height
+
+print(volume)
