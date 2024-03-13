@@ -1,0 +1,5 @@
+activity1 = input("First Activity")
+activity2 = input("Second Activity")
+activity3 = input("Third Activity")
+
+print(f"Morning Routine: 1. {activity1}, 2. {activity2}, 3. {activity3}")

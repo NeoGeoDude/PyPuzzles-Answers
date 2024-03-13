@@ -1,0 +1,9 @@
+subjects = []
+
+for i in range(5):
+    subject = input("Enter subject:\n")
+    grade = input("Enter target grade:\n")
+    subjects.append((subject, grade))
+
+for subject, grade in subjects:
+    print(f"{subject}: {grade}")

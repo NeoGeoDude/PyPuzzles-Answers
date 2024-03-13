@@ -1,0 +1,5 @@
+location = input("What is your dream holiday destination? ")
+landmark = input("What landmark would you like to visit there? ")
+month = input("What is your preffered travel month? ")
+
+print(f"Dream Vacation: Visit the {landmark} in {location} during {month}")

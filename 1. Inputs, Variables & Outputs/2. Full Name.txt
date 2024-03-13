@@ -1,0 +1,4 @@
+forename = input("Please enter your first name")
+surname = input("Please enter your last name")
+
+print(forename, surname)

@@ -1,0 +1,5 @@
+main_course = input("Enter your ideal main course: ")
+side_dish = input("Enter your ideal side dish: ")
+dessert = input("Enter your ideal dessert: ")
+
+print(f"Ideal Dinner Menu: Main Course - {main_course}, Side Dish - {side_dish}, Dessert - {dessert}")

@@ -1,0 +1,6 @@
+preferred_spot = input("Enter your preferred weekend getaway spot: ")
+activity = input("Enter a specific activity to do there: ")
+accommodation = input("Enter the type of accommodation you'd like: ")
+
+sentence = f"Weekend Getaway: Head to the {preferred_spot} for {activity} and stay in a {accommodation}"
+print(sentence)

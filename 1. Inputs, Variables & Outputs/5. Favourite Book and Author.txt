@@ -1,0 +1,4 @@
+book = input("What is your favourite book? ")
+author = input("Who is the Author of the book? ")
+
+print(f"Favourite Book: {book} by {author}")

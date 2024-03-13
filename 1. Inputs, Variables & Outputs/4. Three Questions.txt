@@ -1,0 +1,12 @@
+question1 = input("Enter the first question: ")
+answer1 = input("Enter the example answer for the first question: ")
+
+question2 = input("Enter the second question: ")
+answer2 = input("Enter the example answer for the second question: ")
+
+question3 = input("Enter the third question: ")
+answer3 = input("Enter the example answer for the third question: ")
+
+print("Q:", question1, "A:", answer1)
+print("Q:", question2, "A:", answer2)
+print("Q:", question3, "A:", answer3)

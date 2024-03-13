@@ -1,0 +1,5 @@
+item1 = input("What is the first item you would put in a time capsule? ")
+item2 = input("What is the second item you would put in a time capsule? ")
+item3 = input("What is the third item you would put in a time capsule? ")
+
+print(f"Time Capsule Items: 1. {item1}, 2. {item2}, 3. {item3}")
