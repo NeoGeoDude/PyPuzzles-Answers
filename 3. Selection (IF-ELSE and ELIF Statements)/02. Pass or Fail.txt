@@ -1,4 +1,4 @@
-percentage = float(input("Input percentage\n"))
+percentage = float(input("Enter percentage: "))
 
 if percentage >=50:
   print("Pass")
