@@ -3,5 +3,5 @@ def print_odd_numbers(up_to_number):
         if i % 2 != 0:
             print(i)
             
-given_number = int(input("Enter number"))
+given_number = int(input("Enter number: "))
 print_odd_numbers(given_number)
