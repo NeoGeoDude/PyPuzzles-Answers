@@ -3,5 +3,5 @@ def print_squares(up_to_number):
         square = i ** 2
         print(f"{square}")
 
-given_number = int(input("Enter number"))
+given_number = int(input("Enter number: "))
 print_squares(given_number)
